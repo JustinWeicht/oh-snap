@@ -32,7 +32,7 @@ const Nav = () => {
                 </a>
             </h2>
             <nav>
-                <ul className='flew-row'>
+                <ul className='flex-row'>
                     <li className='mx-2'>
                         <a data-testid='about' href='#about'>
                             About me
