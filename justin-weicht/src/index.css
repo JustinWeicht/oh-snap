@@ -120,6 +120,8 @@ button[disabled] {
 
 img {
   max-width: 100%;
+  min-height: 20rem;
+  max-height: 100%;
 }
 
 span[role='img'] {
@@ -182,8 +184,8 @@ textarea {
 
 .flex-row-nav {
   display: flex;
-  margin-top: 3.1rem;
-  padding-left: 45%;
+  margin-top: 3rem;
+  padding-left: 50%;
 }
 
 .space-between {
@@ -296,14 +298,14 @@ button {
   padding: 10px 15px;
 }
 
-a {
+/* a {
   border-radius: 5px;
   color: var(--primary);
   font-weight: 600;
   padding: 2px 4px;
   margin-left: -2px;
   margin-right: -2px;
-}
+} */
 
 .navActive {
   color: var(--secondary);
@@ -312,4 +314,10 @@ a {
 .icon {
   color: #888888;
   font-size: small;
+}
+
+.logo {
+  max-width: 20rem;
+  min-height: auto;
+  max-height: auto;
 }
