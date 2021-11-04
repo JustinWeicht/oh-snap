@@ -7,52 +7,44 @@ const PhotoList = ({ category }) => {
 
   const [photos] = useState([
     {
-      name: 'Green river',
+      name: 'Airplane',
       category: 'work',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+      description: 'Bardic'
     },
     {
-      name: 'Docks',
+      name: 'Books',
       category: 'work',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+      description: 'Booklyst'
     },
     {
-      name: 'Panoramic village by sea',
+      name: 'Food',
       category: 'work',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+      description: 'Nutriquotient'
     },
     {
-      name: 'Building Skyline',
+      name: 'Money',
       category: 'work',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+      description: 'Budget Tracker'
     },
     {
-      name: 'Park bench',
+      name: 'Blog',
       category: 'work',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+      description: 'Tech Blog'
     },
     {
-      name: 'Cafe table',
+      name: 'Pizza',
       category: 'work',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+      description: 'Pizza Hunt'
     },
     {
-      name: 'Green eyes cat',
+      name: 'Checklist',
       category: 'work',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+      description: 'Taskmaster Pro'
     },
     {
-      name: 'Colorful parrot',
+      name: 'Runners',
       category: 'work',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+      description: 'Run Buddy'
     }
   ]);
 

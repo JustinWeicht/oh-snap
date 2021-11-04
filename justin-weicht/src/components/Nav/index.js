@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import LogoImage from '../../assets/cover/jw-name.png';
-import { FaLinkedinIn, FaGithub, FaInstagram } from 'react-icons/fa';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
@@ -17,7 +16,7 @@ function Nav(props) {
   }, [currentCategory]);
 
   return (
-    <header className="flex-row space-between">
+    <header className="flex-row">
       <a data-testid="link" href="/">
         <img className="logo" src={LogoImage} alt='Justin Weicht' style={{ height: '80px' }} />
       </a>
@@ -51,17 +50,6 @@ function Nav(props) {
           </li>
         </ul>
       </nav>
-      <ul className="flex-row">
-        <li className="mx-1">
-          <a className="icon" href="https://instagram.com/jweicht92" rel="noreferrer" target="_blank"><FaInstagram /></a>
-        </li>
-        <li className="mx-1">
-          <a className="icon" href="https://linkedin.com/in/justin-weicht-4a476684/" rel="noreferrer" target="_blank"><FaLinkedinIn /></a>
-        </li>
-        <li className="mx-1">
-          <a className="icon" href="https://github.com.JustinWeicht" rel="noreferrer" target="_blank"><FaGithub /></a>
-        </li>
-      </ul>
     </header>
   );
 }

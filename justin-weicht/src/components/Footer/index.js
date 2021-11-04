@@ -4,17 +4,18 @@ import { FaLinkedinIn, FaGithub, FaInstagram } from 'react-icons/fa';
 const Footer = () => {
     return(
         <section>
-            <ul className="flex-row">
+            <ul className="flex-row center">
                 <li className="mx-1">
-                    <a className="icon" href="https://instagram.com" rel="noreferrer" target="_blank"><FaInstagram /></a>
+                    <a className="icon" href="https://instagram.com/jweicht92" rel="noreferrer" target="_blank"><FaInstagram /></a>
                 </li>
                 <li className="mx-1">
-                    <a className="icon" href="https://linkedin.com" rel="noreferrer" target="_blank"><FaLinkedinIn /></a>
+                    <a className="icon" href="https://linkedin.com/in/justin-weicht-4a476684/" rel="noreferrer" target="_blank"><FaLinkedinIn /></a>
                 </li>
                 <li className="mx-1">
-                    <a className="icon" href="https://github.com" rel="noreferrer" target="_blank"><FaGithub /></a>
+                    <a className="icon" href="https://github.com/JustinWeicht" rel="noreferrer" target="_blank"><FaGithub /></a>
                 </li>
             </ul>
+            <p className="flex-row center icon">Justin Weicht 2021</p>
         </section>
     );
 };

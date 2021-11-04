@@ -1,7 +1,7 @@
 main {
   margin: 0 auto;
   max-width: 100%;
-  padding: 30px 20% 50px;
+  padding: 30px 15% 50px;
 }
 
 :root {
@@ -19,7 +19,6 @@ main {
 
 * {
   box-sizing: border-box;
-  padding-inline-start: 0px;
 }
 
 html,
@@ -178,21 +177,29 @@ textarea {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+  padding-inline-start: 0px;
 }
 
 .flex-row-nav {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 1.5rem;
-  padding-inline-end: 30px;
+  margin-top: 3.1rem;
+  padding-left: 45%;
 }
 
 .space-between {
   justify-content: space-between;
 }
 
+.flex-start {
+  justify-content: flex-start;
+}
+
 .flex-end {
   justify-content: flex-end;
+}
+
+.center {
+  justify-content: center;
 }
 
 .mx-1 {
@@ -247,7 +254,7 @@ textarea {
 
 .img-thumbnail {
   width: 25%;
-  height: 300px;
+  height: 20rem;
   cursor: pointer;
 }
 
@@ -303,16 +310,6 @@ a {
 }
 
 .icon {
-  height: 5rem;
-  width: 5rem;
-  color: #aaaaaa;
-}
-
-.logo {
-  align-items: baseline;
-}
-
-.navigation {
-  justify-content: center;
-  align-items: center;
+  color: #888888;
+  font-size: small;
 }
