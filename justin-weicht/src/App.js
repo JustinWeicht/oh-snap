@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
 import Gallery from './components/Gallery';
-import ContactForm from './components/Contact';
 import Footer from './components/Footer';
 
 document.title = 'Justin Weicht';
@@ -10,7 +9,7 @@ document.title = 'Justin Weicht';
 function App() {
   const [categories] = useState([
     {
-      name: 'work',
+      name: 'works',
       description: 'Photos and links of recent works and projects',
     },
   ]);
@@ -29,14 +28,8 @@ function App() {
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
       ></Nav>
-        {!contactSelected ? (
-          <>
-            <About></About>
-            <Gallery currentCategory={currentCategory}></Gallery>
-          </>
-        ) : (
-          <ContactForm></ContactForm>
-        )}
+        <About></About>
+        <Gallery currentCategory={currentCategory}></Gallery>
       </body>
       <Footer></Footer>
     </div>

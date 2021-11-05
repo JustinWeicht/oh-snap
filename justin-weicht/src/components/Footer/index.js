@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaLinkedinIn, FaGithub, FaInstagram } from 'react-icons/fa';
+import { FiMail } from 'react-icons/fi';
 
 const Footer = () => {
     return(
@@ -10,6 +11,9 @@ const Footer = () => {
                 </li>
                 <li className="mx-1">
                     <a className="icon" href="https://linkedin.com/in/justin-weicht-4a476684/" rel="noreferrer" target="_blank"><FaLinkedinIn /></a>
+                </li>
+                <li className="mx-1">
+                    <a className="icon" href="mailto: justinweicht11@gmail.com" rel="noreferrer" target="_blank"><FiMail /></a>
                 </li>
                 <li className="mx-1">
                     <a className="icon" href="https://github.com/JustinWeicht" rel="noreferrer" target="_blank"><FaGithub /></a>

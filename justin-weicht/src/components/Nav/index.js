@@ -2,15 +2,12 @@ import React from 'react';
 import LogoImage from '../../assets/cover/jw-name.png';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 import Resume from '../../assets/cover/Justin-Weicht.pdf';
-import { VscEmptyWindow } from 'react-icons/vsc';
 
 function Nav(props) {
   const {
     categories = [],
     currentCategory,
     setCurrentCategory,
-    contactSelected,
-    setContactSelected,
   } = props;
 
   return (
@@ -22,32 +19,26 @@ function Nav(props) {
         <ul className="flex-row-nav">
           {categories.map((category) => (
             <li
-              className={`mx-1 ${
-                currentCategory.name === category.name && !contactSelected
+              className={`mx-1 text ${
+                currentCategory.name === category.name
               }`}
               key={category.name}
             >
               <span
                 onClick={() => {
                   setCurrentCategory(category);
-                  setContactSelected(false);
                 }}
               >
                 {capitalizeFirstLetter(category.name)}
               </span>
             </li>
           ))}
-          <li className={`mx-1 ${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true)}>Contact</span>
+          <li className="mx-1 text">
+            <a href="mailto: justinweicht11@gmail.com">Email</a>
           </li>
-          <li className="mx-1">
+          <li className="mx-1 text">
             <span>
               <a href={Resume} rel="noreferrer" target="_blank">Resume</a>
-            </span>
-          </li>
-          <li>
-            <span>
-              <a href={Resume} rel="noreferrer" target="_blank"><VscEmptyWindow /></a>
             </span>
           </li>
         </ul>
