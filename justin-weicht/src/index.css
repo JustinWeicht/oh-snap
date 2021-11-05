@@ -118,12 +118,6 @@ button[disabled] {
   opacity: 0.8;
 }
 
-img {
-  max-width: 100%;
-  min-height: 20rem;
-  max-height: 100%;
-}
-
 span[role='img'] {
   cursor: default;
 }
@@ -186,6 +180,13 @@ textarea {
   display: flex;
   margin-top: 3rem;
   padding-left: 50%;
+}
+
+.flex-row-footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline-start: 0px;
+  padding-top: 1rem;
 }
 
 .space-between {
@@ -254,12 +255,6 @@ textarea {
   text-align: center;
 }
 
-.img-thumbnail {
-  width: 25%;
-  height: 20rem;
-  cursor: pointer;
-}
-
 .modalBackdrop {
   background: rgba(0, 0, 0, 0.65);
   bottom: 0;
@@ -298,26 +293,56 @@ button {
   padding: 10px 15px;
 }
 
-/* a {
-  border-radius: 5px;
-  color: var(--primary);
-  font-weight: 600;
-  padding: 2px 4px;
-  margin-left: -2px;
-  margin-right: -2px;
-} */
-
 .navActive {
   color: var(--secondary);
 }
 
 .icon {
   color: #888888;
-  font-size: small;
+  font-size: medium;
 }
 
 .logo {
   max-width: 20rem;
   min-height: auto;
   max-height: auto;
+}
+
+svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+/* Responsive Image Gallery */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+}
+
+.column img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }

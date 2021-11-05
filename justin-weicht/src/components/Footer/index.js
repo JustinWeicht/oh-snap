@@ -4,7 +4,7 @@ import { FaLinkedinIn, FaGithub, FaInstagram } from 'react-icons/fa';
 const Footer = () => {
     return(
         <section>
-            <ul className="flex-row center">
+            <ul className="flex-row-footer center">
                 <li className="mx-1">
                     <a className="icon" href="https://instagram.com/jweicht92" rel="noreferrer" target="_blank"><FaInstagram /></a>
                 </li>

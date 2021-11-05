@@ -1,19 +1,17 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import LogoImage from '../../assets/cover/jw-name.png';
 import { capitalizeFirstLetter } from '../../utils/helpers';
+import Resume from '../../assets/cover/Justin-Weicht.pdf';
+import { VscEmptyWindow } from 'react-icons/vsc';
 
 function Nav(props) {
   const {
     categories = [],
+    currentCategory,
     setCurrentCategory,
     contactSelected,
-    currentCategory,
     setContactSelected,
   } = props;
-
-  useEffect(() => {
-    document.title = capitalizeFirstLetter(currentCategory.name);
-  }, [currentCategory]);
 
   return (
     <header className="flex-row">
@@ -22,12 +20,6 @@ function Nav(props) {
       </a>
       <nav>
         <ul className="flex-row-nav">
-          <li className="mx-1">
-            <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
-              About
-            </a>
-          </li>
-
           {categories.map((category) => (
             <li
               className={`mx-1 ${
@@ -47,6 +39,16 @@ function Nav(props) {
           ))}
           <li className={`mx-1 ${contactSelected && 'navActive'}`}>
             <span onClick={() => setContactSelected(true)}>Contact</span>
+          </li>
+          <li className="mx-1">
+            <span>
+              <a href={Resume} rel="noreferrer" target="_blank">Resume</a>
+            </span>
+          </li>
+          <li>
+            <span>
+              <a href={Resume} rel="noreferrer" target="_blank"><VscEmptyWindow /></a>
+            </span>
           </li>
         </ul>
       </nav>

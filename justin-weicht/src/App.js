@@ -5,6 +5,8 @@ import Gallery from './components/Gallery';
 import ContactForm from './components/Contact';
 import Footer from './components/Footer';
 
+document.title = 'Justin Weicht';
+
 function App() {
   const [categories] = useState([
     {
